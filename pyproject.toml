@@ -1,0 +1,20 @@
+[project]
+name = "fix-flash-attn-schema"  # 注册表唯一标识，创建后不可修改，且不能包含 "ComfyUI"
+description = "Bypass ComfyUI's torch.library.custom_op schema-registration bug that causes Flash Attention to silently fall back to SDPA (schema_.has_value() INTERNAL ASSERT FAILED)."
+version = "1.0.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Environment :: GPU :: NVIDIA CUDA",
+]
+
+[project.urls]
+Repository = "https://github.com/<your-github-username>/ComfyUI-FixFlashAttnSchema"
+Documentation = "https://github.com/<your-github-username>/ComfyUI-FixFlashAttnSchema#readme"
+"Bug Tracker" = "https://github.com/<your-github-username>/ComfyUI-FixFlashAttnSchema/issues"
+
+[tool.comfy]
+PublisherId = "<your-publisher-id>"   # 在 registry.comfy.org 创建 Publisher 后回填，一般跟 GitHub 用户名一致
+DisplayName = "Fix: Flash Attention Schema Bug"
+# Icon = "https://raw.githubusercontent.com/<your-github-username>/ComfyUI-FixFlashAttnSchema/main/icon.png"  # 可选，没有就先注释掉
