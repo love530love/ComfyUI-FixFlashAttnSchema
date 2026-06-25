@@ -1,7 +1,7 @@
 [project]
 name = "fix-flash-attn-schema"  # Registry-unique node ID, immutable after creation, must not contain "ComfyUI"
 description = "Bypass ComfyUI's torch.library.custom_op schema-registration bug that causes Flash Attention to silently fall back to SDPA (schema_.has_value() INTERNAL ASSERT FAILED)."
-version = "1.0.2"
+version = "1.0.3"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
 classifiers = [
