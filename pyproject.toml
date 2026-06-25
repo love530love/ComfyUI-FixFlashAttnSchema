@@ -1,6 +1,5 @@
-# encoding: utf-8
 [project]
-name = "fix-flash-attn-schema"
+name = "fix-flash-attn-schema"  # Registry-unique node ID, immutable after creation, must not contain "ComfyUI"
 description = "Bypass ComfyUI's torch.library.custom_op schema-registration bug that causes Flash Attention to silently fall back to SDPA (schema_.has_value() INTERNAL ASSERT FAILED)."
 version = "1.0.0"
 license = { file = "LICENSE" }
@@ -16,6 +15,6 @@ Documentation = "https://github.com/love530love/ComfyUI-FixFlashAttnSchema#readm
 "Bug Tracker" = "https://github.com/love530love/ComfyUI-FixFlashAttnSchema/issues"
 
 [tool.comfy]
-PublisherId = "060d919d-d603-4db1-a058-8aba4eaf77a8"
+PublisherId = "comfyui-506c554736eb4004fcf3155819430879798ed02e440eb860710d1c8995eee3af"   # reuse the PublisherId from your other plugins
 DisplayName = "Fix: Flash Attention Schema Bug"
 # Icon = "https://raw.githubusercontent.com/love530love/ComfyUI-FixFlashAttnSchema/main/icon.png"
