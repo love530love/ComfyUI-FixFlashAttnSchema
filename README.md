@@ -45,7 +45,7 @@ Via ComfyUI-Manager, or manually:
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/<your-github-username>/ComfyUI-FixFlashAttnSchema.git
+git clone https://github.com/love530love/ComfyUI-FixFlashAttnSchema.git
 ```
 
 Restart ComfyUI. You should see in the startup log:
