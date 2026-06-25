@@ -15,6 +15,6 @@ Documentation = "https://github.com/love530love/ComfyUI-FixFlashAttnSchema#readm
 "Bug Tracker" = "https://github.com/love530love/ComfyUI-FixFlashAttnSchema/issues"
 
 [tool.comfy]
-PublisherId = "comfyui-506c554736eb4004fcf3155819430879798ed02e440eb860710d1c8995eee3af"   # reuse the PublisherId from your other plugins
+PublisherId = "love"   # reuse the PublisherId from your other plugins
 DisplayName = "Fix: Flash Attention Schema Bug"
 # Icon = "https://raw.githubusercontent.com/love530love/ComfyUI-FixFlashAttnSchema/main/icon.png"
