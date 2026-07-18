@@ -35,7 +35,7 @@ import comfy.ldm.modules.attention as comfy_attn
 PATCHED = False
 
 if hasattr(comfy_attn, "flash_attn_wrapper") and hasattr(comfy_attn, "flash_attn_func"):
-    def _flash_attn_wrapper_patched(q, k, v, dropout_p: float = 0.0, causal: bool = False):
+    def _flash_attn_wrapper_patched(q, k, v, dropout_p: float = 0.0, causal: bool = False, **kwargs):
         # 直接复用 comfy.ldm.modules.attention 里已经导入好的 flash_attn_func，
         # 不再经过 torch.library.custom_op 包装，从而绕开 schema 注册 bug。
         return comfy_attn.flash_attn_func(q, k, v, dropout_p=dropout_p, causal=causal)
